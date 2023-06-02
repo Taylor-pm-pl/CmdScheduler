@@ -28,7 +28,7 @@ A CRON expression is a string representing the schedule for a particular command
     |    +-------------------- hour (0 - 23)
     +------------------------- min (0 - 59)
 
-This library also supports a few macros:
+This plugin also supports a few macros:
 
 * `@yearly`, `@annually` - Run once a year, midnight, Jan. 1 - `0 0 1 1 *`
 * `@monthly` - Run once a month, midnight, first of month - `0 0 1 * *`

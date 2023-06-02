@@ -1,0 +1,5 @@
+name: CmdScheduler
+version: 0.0.1
+api: 5.0.0
+main: taylordevs\CmdScheduler\Loader
+author: taylordevs

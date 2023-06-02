@@ -1,0 +1,22 @@
+{
+    "name": "taylordevs/cmdscheduler",
+    "description": "Plugin to Schedule CMD for PocketMine-MP",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Taylordevs\\Cmdscheduler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "taylordevs"
+        }
+    ],
+    "require": {
+        "dragonmantank/cron-expression": "^3.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.17"
+    }
+}

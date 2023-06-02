@@ -86,11 +86,11 @@ class Job
                 include $path;
                 $output = ob_get_clean();
                 if($output !== false && trim($output) !== ""){
-                    echo "--- Script output ---\n"
+                    Server::getInstance()->getLogger()->info("--- Script output ---\n"
                     . $output
-                    . "\n--- End of script output ---\n";
+                    . "\n--- End of script output ---\n");
                 } else{
-                    echo "Script $realPath executed successfully\n";
+                    Server::getInstance()->getLogger()->info("Script $realPath executed successfully\n");
                 }
             }catch(\Throwable $e){
                 ob_end_flush();

@@ -22,12 +22,12 @@
 # Command: Console Command, PowerShell Command or Script Path
 timezone: 'Asia/Jakarta'
 Scheduler:
-  - type: 2
+  - type: 0
     time: '* * * * *'
-    command: "test.php"
+    command: "say Hello World!"
   - type: 1
     time: '@hourly'
     command: "Write-Host 'Hello World!'"
-  - type: 0
+  - type: 2
     time: '@daily'
     command: "test.php"

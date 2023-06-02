@@ -1,0 +1,33 @@
+# Config
+
+# Type:
+# 0 - Run Console Command
+# 1 - Run PowerShell Command
+# 2 - Run Script in plugin_data/CmdScheduler/scripts
+# Time:
+#  *    *    *    *    *
+#-    -    -    -    -
+#  |    |    |    |    |
+#  |    |    |    |    |
+#  |    |    |    |    +----- day of week (0 - 7) (Sunday=0 or 7)
+#  |    |    |    +---------- month (1 - 12)
+#  |    |    +--------------- day of month (1 - 31)
+#  |    +-------------------- hour (0 - 23)
+#  +------------------------- min (0 - 59)
+#  @yearly, @annually - Run once a year, midnight, Jan. 1 - 0 0 1 1 *
+#  @monthly - Run once a month, midnight, first of month - 0 0 1 * *
+#  @weekly - Run once a week, midnight on Sun - 0 0 * * 0
+#  @daily, @midnight - Run once a day, midnight - 0 0 * * *
+#  @hourly - Run once an hour, first minute - 0 * * * *
+# Command: Console Command, PowerShell Command or Script Path
+
+Scheduler:
+  - type: 0
+    time: '* * * * *'
+    command: "say Hello World!"
+  - type: 1
+    time: '@hourly'
+    command: "Write-Host 'Hello World!'"
+  - type: 2
+    time: '@daily'
+    command: "hello_world.bat"

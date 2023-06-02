@@ -22,7 +22,10 @@ class Loader extends PluginBase {
         self::setInstance($this);
         require_once $this->getFile() . "vendor/autoload.php";
         $this->saveDefaultConfig();
-        date_default_timezone_set($this->getConfig()->get("timezone", "Asia/Shanghai"));
+        $timezone = $this->getConfig()->get("timezone", '');
+        if ($timezone !== '') {
+            date_default_timezone_set($timezone);
+        }
         @mkdir($this->getDataFolder() . "scripts");
         $this->saveResource("scripts/test.php");
         $this->initAllJobs();

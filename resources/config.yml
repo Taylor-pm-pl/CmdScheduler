@@ -20,7 +20,7 @@
 #  @daily, @midnight - Run once a day, midnight - 0 0 * * *
 #  @hourly - Run once an hour, first minute - 0 * * * *
 # Command: Console Command, PowerShell Command or Script Path
-timezone: 'Asia/Jakarta'
+timezone: ''
 Scheduler:
   - type: 0
     time: '* * * * *'

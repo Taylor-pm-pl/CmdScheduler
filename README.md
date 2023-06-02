@@ -5,6 +5,11 @@
 
 **CmdScheduler** is a plugin for PocketMine-MP 5, It performs processing of CRON expressions when due will execute 1 scheduled instruction.
 
+
+## Why CmdScheduler ?
+- CmdScheduler helps create a specific schedule in an easy to understand way such as: every minute, hour, day, week, month, ... to execute the command.
+- In addition, CmdScheduler can also execute 3 types of commands: ConsoleCommand, Shell and Script.
+
 ## Features
 - [x] CRON expressions
 - [x] Execute command: Console, Shell, Script
